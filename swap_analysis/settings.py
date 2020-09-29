@@ -26,8 +26,9 @@ SECRET_KEY = 'xn=n5x^ftb-hgpma!3sl0o@o7j911^hdp2(%*j!4*h33wl@iiu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "swap_analysis.settings")
 
 # Application definition
 
