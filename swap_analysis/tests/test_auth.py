@@ -3,7 +3,6 @@ from rest_framework.test import APIClient
 
 
 class AuthTest(TestCase):
-    # FIXTURE_DIRS = ('/swap_analysis/fixtures/',)
 
     fixtures = ['swap_analysis/fixtures/authentication.json', ]
 

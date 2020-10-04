@@ -15,7 +15,7 @@ class SwapSerializer(serializers.ModelSerializer):
         model = Swap
         fields = ['id', 'battery_in', 'battery_out', 'station',
                   'driven_distance', 'out_state_of_charge',
-                  'in_state_of_charge', 'attendant',
+                  'in_state_of_charge', 'attendant', 'driver',
                   'used_energy', 'created_at']
 
 
