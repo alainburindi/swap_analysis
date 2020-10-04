@@ -90,6 +90,64 @@ Now you are good to go. Enjoy the functionalities
     $ docker-compose exec web --rm sh -c "python manage.py test"
 ```
 
+## Endpoints:
+
+#### Authentication:
+
+`POST /login`
+
+```source-json
+{
+    "email": "attendant@ampersand.solar",
+    "password": "Password"
+}
+```
+
+#### Swap:
+
+`GET /swaps`
+Get all swaps list
+
+`POST /swaps`
+
+ceate a swap
+
+```source-json
+{
+    "battery_out": "d734d9bc-573f-4c1e-8a02-adeae35dcbc1",
+    "battery_in": "d734d9bc-573f-4c1e-8a02-adeae35dcbc1",
+    "station": "d734d9bc-573f-4c1e-8a02-adeae35dcbc1",
+    "driven_distance": 1.2,
+    "out_state_of_charge": 60,
+    "in_state_of_charge": 20,
+    "used_energy": -3
+}
+```
+
+For the endpoints bellow the date is optional. if it's not provided the today's date wille be considered
+
+`GET /total_energy`
+Get the total energy used per day
+
+```source-json
+{
+    "date": "2020-10-10"
+}
+```
+
+`GET /distance_driven`
+Get the total drive distance per day
+
+```source-json
+{
+    "date": "2020-10-10"
+}
+```
+
+## To do:
+
+Calculate the battery efficiency
+
 ### Deployment
 
-Stagging link: [click here](link_will_be_here)
+Stagging link on heroku: [click here](https://fast-savannah-03659.herokuapp.com)
