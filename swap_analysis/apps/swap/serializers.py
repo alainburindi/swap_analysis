@@ -13,8 +13,10 @@ class SwapSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Swap
-        fields = ['id', 'battery_in', 'battery_out', 'station', 'driven_distance',
-                  'out_state_of_charge', 'in_state_of_charge', 'attendant', 'used_energy', 'created_at']
+        fields = ['id', 'battery_in', 'battery_out', 'station',
+                  'driven_distance', 'out_state_of_charge',
+                  'in_state_of_charge', 'attendant',
+                  'used_energy', 'created_at']
 
 
 class StatSerializer(serializers.Serializer):

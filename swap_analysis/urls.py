@@ -23,7 +23,7 @@ urlpatterns = [
 ]
 
 urlpatterns += [
-    path('api-token-auth/', CustomAuthToken.as_view()),
+    path('login', CustomAuthToken.as_view()),
     path('swaps', views.CreateSwap.as_view()),
     path('total-energy', views.TotalEnergy.as_view()),
     path('distance_driven', views.TotalDistance.as_view()),

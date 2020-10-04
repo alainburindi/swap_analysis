@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+from swap_analysis.apps.swap.models import (
+    Battery, Swap, Driver, Station, Attendant, Motor)
+
+models = [Battery,
+          Swap, Driver, Station, Attendant, Battery, Motor]
+
+admin.register(models)
