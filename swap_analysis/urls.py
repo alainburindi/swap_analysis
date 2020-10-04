@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from swap_analysis.apps.authentication.views import CustomAuthToken
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+]
+
+urlpatterns += [
+    path('api-token-auth/', CustomAuthToken.as_view())
 ]
