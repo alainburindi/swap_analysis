@@ -1,0 +1,34 @@
+[
+  {
+    "model": "swap.swap",
+    "pk": "68b5682e-acc6-4bce-b99f-66cf3f829dc2",
+    "fields": {
+      "battery_in_id": "0093b3af-461d-49c0-8779-8cf1df011055",
+      "battery_out": "0df55090-29e4-4f6c-a35e-1e46e7502727",
+      "driver_id": "a1fc6a64-218b-4385-8bc9-02bc36ac344e",
+      "station_id": "243efd09-fef4-449b-a037-d01f9b39966a",
+      "attendant_id": "3ef6debf-86af-4e12-8e82-6bc800f61d3b",
+      "driven_distance": 64,
+      "out_state_of_charge": 100,
+      "in_state_of_charge": 20,
+      "used_energy": 55,
+      "created_at": "2020-04-10"
+    }
+  },
+  {
+    "model": "swap.swap",
+    "pk": "c2300655-1fa2-45c8-993a-9f776c7dc899",
+    "fields": {
+      "battery_in_id": "5d5b28c2-ab10-4b17-ae1c-92bb0d51b886",
+      "battery_out": "1687de68-85a7-4f69-884a-d13952eb1852",
+      "driver_id": "520c643a-f0d1-4451-a267-1d93c5d6f841",
+      "station_id": "243efd09-fef4-449b-a037-d01f9b39966a",
+      "attendant_id": "3ef6debf-86af-4e12-8e82-6bc800f61d3b",
+      "driven_distance": 70,
+      "out_state_of_charge": 85,
+      "in_state_of_charge": 11,
+      "used_energy": 58,
+      "created_at": "2020-04-10"
+    }
+  }
+]

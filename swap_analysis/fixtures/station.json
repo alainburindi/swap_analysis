@@ -1,0 +1,20 @@
+[
+  {
+    "model": "swap.station",
+    "pk": "243efd09-fef4-449b-a037-d01f9b39966a",
+    "fields": {
+      "name": "Station 1",
+      "location": "Kacyiru",
+      "created_at": "2020-04-10"
+    }
+  },
+  {
+    "model": "swap.station",
+    "pk": "030278c5-3406-446c-ba51-2f6d1c05b230",
+    "fields": {
+      "name": "Station 2",
+      "location": "Gisozi",
+      "created_at": "2020-04-10"
+    }
+  }
+]
