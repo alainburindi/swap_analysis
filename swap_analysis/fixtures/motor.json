@@ -1,0 +1,22 @@
+[
+  {
+    "model": "swap.motor",
+    "pk": "6d9cfd24-37c9-466a-82e4-67814f5a379a",
+    "fields": {
+      "color": "White",
+      "type": "Test type",
+      "driver_id": "a1fc6a64-218b-4385-8bc9-02bc36ac344e",
+      "created_at": "2020-04-10"
+    }
+  },
+  {
+    "model": "swap.motor",
+    "pk": "4ff26d4c-4723-4728-b8c6-7266061740a6",
+    "fields": {
+      "color": "Blue",
+      "type": "Test type",
+      "driver_id": "520c643a-f0d1-4451-a267-1d93c5d6f841",
+      "created_at": "2020-04-10"
+    }
+  }
+]

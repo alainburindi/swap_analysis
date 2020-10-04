@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'swap_analysis.apps.authentication',
     'rest_framework.authtoken',
+    'swap_analysis.apps.swap',
 ]
 
 AUTH_USER_MODEL = 'authentication.User'

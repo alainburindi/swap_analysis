@@ -1,0 +1,18 @@
+[
+  {
+    "model": "swap.driver",
+    "pk": "a1fc6a64-218b-4385-8bc9-02bc36ac344e",
+    "fields": {
+      "name": "Alain Burindi",
+      "created_at": "2020-04-10"
+    }
+  },
+  {
+    "model": "swap.driver",
+    "pk": "520c643a-f0d1-4451-a267-1d93c5d6f841",
+    "fields": {
+      "name": "Amidhou",
+      "created_at": "2020-04-10"
+    }
+  }
+]
