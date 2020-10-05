@@ -16,9 +16,24 @@ class AuthTest(TestCase):
         # self.client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
 
     def test_successful_login(self):
-        user = {'username': 'attendant@ampersand.solar',
+        user = {'email': 'attendant@ampersand.solar',
                 'password': 'Password123'}
         response = self.client.post(
             '/login', data=user)
+
         self.assertIsNotNone(response.data['token'])
-        self.assertEqual(user['username'], response.data['email'])
+        self.assertEqual(user['email'], response.data['email'])
+
+    def test_invalid_email(self):
+        user = {'email': 'attendant@amp.solar',
+                'password': 'Password123'}
+        response = self.client.post(
+            '/login', data=user)
+        self.assertEqual('Invalid email or password', response.data['detail'])
+
+    def test_invalid_password(self):
+        user = {'email': 'attendant@ampersand.solar',
+                'password': 'invalidPass'}
+        response = self.client.post(
+            '/login', data=user)
+        self.assertEqual('Invalid email or password', response.data['detail'])
