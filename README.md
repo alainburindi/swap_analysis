@@ -68,7 +68,7 @@ if you have docker installed run the following command in the root directory/fol
     $ docker-compose up
 ```
 
-If the app is not running. exec should be replaced by run in the following processes
+If the app is not running. `exec` should be replaced by `run` in the following processes
 
 ### Loading the migrations
 
@@ -116,6 +116,7 @@ ceate a swap
 {
     "battery_out": "d734d9bc-573f-4c1e-8a02-adeae35dcbc1",
     "battery_in": "d734d9bc-573f-4c1e-8a02-adeae35dcbc1",
+    "driver": "d734d9bc-573f-4c1e-8a02-adeae35dcbc1",
     "station": "d734d9bc-573f-4c1e-8a02-adeae35dcbc1",
     "driven_distance": 1.2,
     "out_state_of_charge": 60,
